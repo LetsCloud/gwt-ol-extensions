@@ -6,10 +6,11 @@
 	<parent>
         <groupId>com.github.letscloud</groupId>
         <artifactId>gwt-jswrapper-parent</artifactId>
-        <version>1.0.0</version>
+		<version>0.0.1-SNAPSHOT</version>
     </parent>
 
 	<artifactId>gwt-ol-extensions</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>gwt-lib</packaging>
 
 	<name>GWT OpenLayers Extensions</name>
@@ -146,7 +147,7 @@
 				<version>${tbroyer.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<moduleName>ol.GwtOlExtensions</moduleName>
+					<moduleName>GwtOlExtensions</moduleName>
 					<style>OBFUSCATED</style>
 					<logLevel>INFO</logLevel>
 					<sourceLevel>1.8</sourceLevel>

@@ -22,7 +22,6 @@
  */
 package ol.geocoder;
 
-import gwt.jswrapper.client.GwtJsWrapper;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 import ol.control.Control;
@@ -33,11 +32,6 @@ import ol.control.Control;
  */
 @JsType(isNative = true, namespace = JsPackage.GLOBAL, name = "Geocoder")
 public class Geocoder extends Control {
-
-	static {
-		GwtJsWrapper.injectJs(GeocoderClientBundle.INSTANCE.olGeocoderJs(), true, false);
-		GwtJsWrapper.injectCss(GeocoderClientBundle.INSTANCE.olGeocoderCss());
-	}
 
 	public Geocoder() {
 	}

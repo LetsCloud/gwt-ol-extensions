@@ -22,7 +22,6 @@
  */
 package ol.popup;
 
-import gwt.jswrapper.client.GwtJsWrapper;
 import jsinterop.annotations.JsType;
 import ol.Overlay;
 import ol.OverlayOptions;
@@ -33,11 +32,6 @@ import ol.OverlayOptions;
  */
 @JsType(isNative = true, namespace = "ol.Overlay", name = "Popup")
 public class Popup extends Overlay {
-
-	static {
-		GwtJsWrapper.injectJs(PopupClientBundle.INSTANCE.olPopupJs(), true, false);
-		GwtJsWrapper.injectCss(PopupClientBundle.INSTANCE.olPopupCss());
-	}
 
 	public Popup() {
 	}
