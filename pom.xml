@@ -6,10 +6,11 @@
 	<parent>
         <groupId>com.github.letscloud</groupId>
         <artifactId>gwt-jswrapper-parent</artifactId>
-        <version>1.0.0</version>
+		<version>0.0.1-SNAPSHOT</version>
     </parent>
 
 	<artifactId>gwt-ol-extensions</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>gwt-lib</packaging>
 
 	<name>GWT OpenLayers Extensions</name>
@@ -36,7 +37,6 @@
 		<connection>scm:git:git@github.com:LetsCloud/gwt-ol-extensions.git</connection>
 		<developerConnection>scm:git:git@github.com:LetsCloud/gwt-ol-extensions.git</developerConnection>
 		<url>http://github.com/LetsCloud/gwt-ol-extensions</url>
-		<tag>v1.0.0</tag>
 	</scm>
 
 	<distributionManagement>
@@ -75,11 +75,6 @@
 		<dependency>
 			<groupId>com.google.elemental2</groupId>
 			<artifactId>elemental2-dom</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.github.letscloud</groupId>
-			<artifactId>gwt-jswrapper</artifactId>
-	        <version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.tdesjardins</groupId>

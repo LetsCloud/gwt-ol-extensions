@@ -20,22 +20,42 @@
 /**
  * 
  */
-package ol.popup;
+package ol.geocoder;
 
+import jsinterop.annotations.JsPackage;
+import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
-import ol.Overlay;
-import ol.OverlayOptions;
+import ol.Options;
 
 /**
  * @author robi
  *
  */
-@JsType(isNative = true, namespace = "ol.Overlay", name = "Popup")
-public class Popup extends Overlay {
+@JsType(isNative = true, namespace = JsPackage.GLOBAL, name = "Object")
+public class GeocoderOptions implements Options {
 
-	public Popup() {
-	}
+	@JsProperty
+	public native void setProvider(String provider);
 
-	public Popup(OverlayOptions overlayOptions) {
-	}
+	@JsProperty
+	public native void setLang(String lang);
+
+	@JsProperty
+	public native void setPlaceholder(String lang);
+
+	@JsProperty
+	public native void setLimit(int limit);
+
+	@JsProperty
+	public native void setDebug(boolean debug);
+
+	@JsProperty
+	public native void setAutoComplete(boolean autoComplete);
+
+	@JsProperty
+	public native void setKeepOpen(boolean keepOpen);
+
+	@JsProperty
+	public native void setCrs(String crs);
+
 }

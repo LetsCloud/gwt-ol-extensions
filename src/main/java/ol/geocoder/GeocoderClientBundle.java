@@ -17,25 +17,19 @@
  * limitations under the License.
  * #L%
  */
-/**
- * 
- */
-package ol.popup;
+package ol.geocoder;
 
-import jsinterop.annotations.JsType;
-import ol.Overlay;
-import ol.OverlayOptions;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.TextResource;
 
-/**
- * @author robi
- *
- */
-@JsType(isNative = true, namespace = "ol.Overlay", name = "Popup")
-public class Popup extends Overlay {
+public interface GeocoderClientBundle  extends ClientBundle {
 
-	public Popup() {
-	}
+	GeocoderClientBundle INSTANCE = GWT.create(GeocoderClientBundle.class);
 
-	public Popup(OverlayOptions overlayOptions) {
-	}
+    @Source("js/ol-geocoder.js")
+    TextResource olGeocoderJs();
+
+    @Source("css/ol-geocoder.min.css")
+    TextResource olGeocoderCss();
 }

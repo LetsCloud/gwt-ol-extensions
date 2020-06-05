@@ -20,22 +20,26 @@
 /**
  * 
  */
-package ol.popup;
+package ol.geocoder;
 
+import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
-import ol.Overlay;
-import ol.OverlayOptions;
+import ol.Coordinate;
+import ol.events.Event;
 
 /**
  * @author robi
  *
  */
-@JsType(isNative = true, namespace = "ol.Overlay", name = "Popup")
-public class Popup extends Overlay {
+@JsType(isNative = true)
+public interface AddressChosenEvent extends Event {
 
-	public Popup() {
-	}
+	/**
+	 * The map where the event occurred.
+	 *
+	 * @return {@link ol.PluggableMap}
+	 */
+	@JsProperty
+	Coordinate getCoordinate();
 
-	public Popup(OverlayOptions overlayOptions) {
-	}
 }
