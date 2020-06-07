@@ -1,8 +1,8 @@
 /*
  * #%L
- * GwtMaterial
+ * LetsCloud
  * %%
- * Copyright (C) 2015 - 2020 GwtMaterialDesign
+ * Copyright (C) 2020 LetsCloudTeam
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * #L%
- */
-/**
- * 
  */
 package ol.popup;
 import com.google.gwt.dom.client.Element;
