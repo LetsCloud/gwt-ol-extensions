@@ -1,8 +1,8 @@
 /*
  * #%L
- * GwtMaterial
+ * LetsCloud
  * %%
- * Copyright (C) 2015 - 2020 GwtMaterialDesign
+ * Copyright (C) 2020 LetsCloudTeam
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +17,10 @@
  * limitations under the License.
  * #L%
  */
-/**
- * 
- */
 package ol.geocoder;
 
 import jsinterop.annotations.JsPackage;
+import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 import ol.control.Control;
 
@@ -38,5 +36,37 @@ public class Geocoder extends Control {
 
 	public Geocoder(String controlType, GeocoderOptions geocoderOptions) {
 	}
+
+	/**
+	 * Returns the layer {ol.layer.Vector} created by Geocoder control.
+	 * 
+	 * @return
+	 */
+	@JsProperty
+	public native ol.layer.Vector getLayer();
+
+	/**
+	 * Returns the source {ol.source.Vector} created by Geocoder control.
+	 * 
+	 * @return
+	 */
+	@JsProperty
+	public native ol.source.Vector getSource();
+
+	/**
+	 * Sets a new provider.
+	 * 
+	 * @param provider
+	 */
+	@JsProperty
+	public native void setProvider(String provider);
+
+	/**
+	 * Sets provider key.
+	 * 
+	 * @param provider
+	 */
+	@JsProperty
+	public native void setProviderKey(String provider);
 
 }
