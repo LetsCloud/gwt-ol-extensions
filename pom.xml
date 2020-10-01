@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.github.letscloud</groupId>
 		<artifactId>gwt-jswrapper-parent</artifactId>
-		<version>0.0.2-SNAPSHOT</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>gwt-ol-extensions</artifactId>
@@ -52,7 +52,7 @@
 	</distributionManagement>
 
 	<properties>
-		<gwt-ol3.version>7.3.0-gwt2_9</gwt-ol3.version>
+		<gwt-ol3.version>8.0.0-gwt2_9</gwt-ol3.version>
 	</properties>
 
 	<dependencies>
